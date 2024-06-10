@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standalone App</title>
+    <style>
+        /* Add any CSS styling here */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function navigate() {
+            window.location.href = "psgm:play?id=CUSA99344&arg=%2Fshows%2F891580";
+            window.open("psgm:play?id=CUSA99344&arg=%2Fshows%2F891580", "_blank");
+        }
+    </script>
+    <button onclick="navigate()">Click me</button>
+</body>
